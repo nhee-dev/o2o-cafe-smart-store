@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tool="http://schemas.android.com/tools"
+    android:id="@+id/layout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <ImageButton
+        android:id="@+id/btn_menu_item"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_margin="10sp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/button_go_order"
+        android:scaleType="fitCenter" />
+
+    <ImageView
+        android:id="@+id/is_best"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="60dp"
+        android:adjustViewBounds="true"
+        tool:src="@drawable/outline_favorite_24" />
+
+    <ImageView
+        android:id="@+id/is_favorite"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:adjustViewBounds="true"
+        tool:src="@drawable/outline_favorite_24"
+        android:layout_below="@id/is_best"/>
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:textSize="10sp"
+        android:layout_below="@id/btn_menu_item"
+        android:layout_centerHorizontal="true"
+        tool:text="아메리카노" />
+
+</RelativeLayout>
